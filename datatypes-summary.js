@@ -43,6 +43,35 @@ const myFunction = function(string, number) {
   console.log("hello");
 }
 
-console.log(typeof myFunction)
+//console.log(typeof myFunction)
 
  // Assignment Ecma script
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// (Primitive) => Stack, (Non Primitive) => Heap
+
+let myYoutubename = "rajcompetitivegamer"
+
+let anothername = myYoutubename
+
+anothername = "chaiaurcode"
+
+// console.log(myYoutubename);
+// console.log(anothername);
+
+// Heap
+let userOne = {
+  email: "user@gmail.com",
+  upi: "user@axis"
+}
+
+let userTwo = userOne
+
+userTwo.email = "raj@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+//https://codedamn.com/news/javascript/memory-management-complete-guide
+
+
